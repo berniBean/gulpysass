@@ -1,0 +1,145 @@
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.imposter{
+    background-color: white;
+    min-width: calc(100vh - 20px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+    
+}
+
+.cabecera{
+    background-color: #03A9F4;
+    padding:0 20px;    
+    background-color: aquamarine;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.cabecera-titulo{
+    align-self: center;
+}
+
+.main-nav__list{
+    display: flex;  
+    list-style: none; 
+}
+
+.main-nav__item{
+    padding-left: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.main-nav__link{
+    text-decoration: none; 
+}
+
+
+.main-nav__list--aside{ 
+    display: block;    
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.sidebar__contenido{
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: column;
+    /* flex: 0 0 70%; */
+}
+
+.sidebar__items{
+    display: flex;
+    flex-direction: column;
+
+}
+.sidebar__item{
+   
+}
+
+.sidebar__content{
+    /* flex: 0 0 30%; */
+    background-color: blueviolet;
+    order:-1;
+    margin-bottom: 1rem;
+   
+}
+
+.main-nav__link{
+    color: white
+}
+
+.sidebar__contenido{
+    text-align: center;
+    
+}
+
+.sidebar__item--orangered{
+    background-color: orangered;
+}
+
+.sidebar__item--violet{
+    background-color: violet;
+}
+
+.sidebar__item--blue{
+    background-color: blue;
+}
+
+
+.foter{
+    height: 100px;
+    margin-top: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width:768px){
+    .sidebar__contenido{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .cabecera{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        flex-direction: row;
+    }
+
+    .sidebar__contenido{
+        flex: 0 1 60%;
+        margin-right: 20px;
+    }
+
+    .sidebar__content{
+        flex: 1;
+        order: unset;
+        margin-bottom: unset;
+        
+        
+    }
+
+
+}

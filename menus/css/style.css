@@ -1,0 +1,143 @@
+
+
+.body--orange{
+    box-sizing: border-box;
+    margin:0;
+    background: #f09162;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.imposer{
+    background-color: white;
+    min-width: calc(100vh - 20px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+    
+}
+
+
+/*componente menú sencillo*/
+.menu-sencillo{
+    background:blue;
+    
+}
+.menu-sencillo__titulo--blanco{
+    color: white;
+}
+
+.menu-sencillo__titulo--negro{
+    color: black;
+}
+
+.menu-sencillo-lista{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+}
+
+.menu-sencillo-lista .menu-sencillo-lista__item{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.menu-sencillo-lista .menu-sencillo-lista__item:hover{
+    background-color: #1a2770;
+}
+
+.menu-sencillo-lista .menu-sencillo-lista__ancla{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width:768px){
+    .menu-sencillo-lista{
+        flex-direction: row;
+    }
+}
+/*componente menú sencillo*/
+.menu-iconos{
+    background:blue;
+    
+}
+.menu-iconos__titulo--blanco{
+    color: white;
+}
+
+.menu-iconos__titulo--negro{
+    color: black;
+}
+
+.menu-iconos-lista{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+}
+
+.menu-iconos-lista .menu-iconos-lista__item{
+    list-style: none;
+    padding: 20px;
+    flex: 1;
+    
+}
+
+.menu-iconos-lista .menu-iconos-lista__item{
+    box-sizing: border-box;
+}
+
+.menu-iconos-lista .menu-iconos-lista__item:hover{
+    background-color: #1a2770;
+}
+
+.menu-iconos-lista .menu-iconos-lista__ancla{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+.menu-iconos-lista__ancla{
+    display: flex;
+    
+}
+
+.menu-iconos-lista__ancla-imagen{
+    flex: 0 1 2em;
+}
+
+.menu-iconos-lista__ancal-seccion-descripcion{
+    font-size: .8rem;
+    display:block;
+    margin-top: .5rem;
+}
+
+@media screen and (min-width:568px){
+    .menu-iconos-lista{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-iconos-lista .menu-iconos-lista__item{
+        flex: 0 1 50%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .menu-iconos-lista{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-iconos-lista .menu-iconos-lista__item{
+        flex:  1 ;
+    }
+}
+
+
+/*componente menú iconos*/
